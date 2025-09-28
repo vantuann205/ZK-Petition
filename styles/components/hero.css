@@ -1,0 +1,129 @@
+/* Hero Component - BEM Structure */
+.hero {
+  margin: 2rem 0;
+  position: relative;
+  overflow: hidden;
+  background-color: hsl(var(--card));
+  border-radius: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero__container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .hero__container {
+    padding: 2.5rem;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__container {
+    padding: 3rem;
+  }
+}
+
+.hero__content {
+  width: 100%;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .hero__content {
+    width: 60%;
+  }
+}
+
+.hero__title {
+  color: hsl(var(--foreground));
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__title {
+    font-size: 3.75rem;
+  }
+}
+
+.hero__subtitle {
+  display: block;
+  color: var(--zkp-primary);
+}
+
+.hero__description {
+  margin: 1.5rem 0;
+  font-size: 0.875rem;
+  max-width: 28rem;
+  color: hsl(var(--muted-foreground));
+}
+
+@media (min-width: 768px) {
+  .hero__description {
+    font-size: 1rem;
+  }
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero__cta-secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  background-color: transparent;
+  border: 1px solid hsl(var(--border));
+  color: hsl(var(--foreground));
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.hero__cta-secondary:hover {
+  background-color: hsl(var(--accent));
+}
+
+.hero__image-container {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hero__image-container {
+    display: flex;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+  }
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .hero__image {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    object-position: left;
+  }
+}
