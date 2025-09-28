@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   description:
     "Decentralized petition platform built on Cardano's Midnight sidechain. Create anonymous, tamper-proof petitions using Zero-Knowledge Proofs for ultimate privacy and security.",
   icons: {
-    icon: [{ url: "/automatic-favicon-no-bg.png", type: "image/png" }],
-    apple: [{ url: "/automatic-favicon-no-bg.png" }],
+    icon: [{ url: "zkpetition-logo-none.png", type: "image/png" }],
+    apple: [{ url: "zkpetition-logo-none.png" }],
   },
   generator: "v0.app",
 }
