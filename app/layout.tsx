@@ -16,14 +16,13 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: "ZKPetition - Anonymous & Secure Blockchain Petitions",
+  title: "ZKPetition",
   description:
     "Decentralized petition platform built on Cardano's Midnight sidechain. Create anonymous, tamper-proof petitions using Zero-Knowledge Proofs for ultimate privacy and security.",
   icons: {
-    icon: [{ url: "zkpetition-logo-none.png", type: "image/png" }],
+    icon: [{ url: "logo-180.png", type: "image/png" }],
     apple: [{ url: "zkpetition-logo-none.png" }],
   },
-  generator: "v0.app",
 }
 
 export default function RootLayout({

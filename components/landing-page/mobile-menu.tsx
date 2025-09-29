@@ -63,7 +63,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   if (!isOpen) return null
 
   // Determine which logo to show based on theme
-  const logoSrc = isDarkMode ? "/logo-light.jpg" : "/logo-dark.jpg"
+  const logoSrc = isDarkMode ? "/zkpetition-logo-dark.png" : "/zkpetition-logo.png"
 
   return (
     <div className="fixed inset-0 z-[100] bg-black/50 md:hidden" style={{ display: isOpen ? "block" : "none" }}>
@@ -76,10 +76,11 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             {mounted ? (
               <Image
                 src={logoSrc || "/placeholder.svg"}
-                alt="Automatic Logo"
+                alt="ZKPetition Logo"
                 width={150}
                 height={40}
-                className="h-8 w-auto"
+                className="header__logo"
+                style={{marginTop: "0.6rem"}}
               />
             ) : (
               <div className="h-8 w-[150px]" />
@@ -110,7 +111,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               </Link>
             </li>
 
-            {/* Resources Dropdown */}
+            {/* Resources Dropdown
             <li className="border-b border-gray-200 dark:border-gray-800 pb-1">
               <button
                 onClick={() => toggleDropdown("resources")}
@@ -204,9 +205,9 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                   ))}
                 </div>
               )}
-            </li>
+            </li> */}
 
-            <li>
+            {/* <li>
               <Link
                 href="/portfolio"
                 className={`flex items-center py-3 px-4 rounded-lg text-base ${
@@ -218,7 +219,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               >
                 Portfolio
               </Link>
-            </li>
+            </li> */}
 
             <li>
               <Link
@@ -236,7 +237,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           </ul>
         </nav>
 
-        <div className="p-4 mt-4 border-t border-gray-200 dark:border-gray-800">
+        {/* <div className="p-4 mt-4 border-t border-gray-200 dark:border-gray-800">
           <Link
             href="/contact"
             className="flex items-center justify-center w-full py-3 px-4 bg-[#7A7FEE] text-white rounded-lg text-base font-medium hover:bg-opacity-90 transition-colors"
@@ -244,7 +245,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           >
             Contact Us
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   )

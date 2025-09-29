@@ -137,7 +137,11 @@ function parseCSV(csvText: string): PortfolioItem[] {
     headers.forEach((header, index) => {
       const key = columnMap[header]
       if (key && index < values.length) {
-        item[key] = values[index]
+        if (key === "categories") {
+          item[key] = values[index].split(";").map(v => v.trim()) as any
+        } else {
+          item[key] = values[index] as any
+        }
       }
     })
 

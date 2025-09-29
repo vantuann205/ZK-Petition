@@ -66,10 +66,11 @@
 export default function StartProject() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-white dark:bg-[#111111]">
-      <h1 className="text-5xl md:text-7xl font-extrabold text-black dark:text-white">
+      <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold text-black dark:text-white text-center px-4">
         COMING SOON!
       </h1>
     </div>
   )
 }
+
 
