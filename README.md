@@ -11,3 +11,9 @@ ZK-Petition is a privacy-preserving petition platform.
 - Next.js
 - Tailwind CSS
 - ZK-SNARKs
+
+## Getting Started
+To run the development server:
+```bash
+npm run dev
+```
